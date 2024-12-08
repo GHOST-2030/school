@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>النشرة التفاعلية للتقويم الذاتي المدرسي</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #6a5acd; /* لون مناسب للرأس */
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+    }
+    header h1 {
+      font-size: 2em;
+      margin: 0;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.1em;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+    .box {
+      width: 250px;
+      height: 250px;
+      background-color: white;
+      border-radius: 10px;
+      border: 2px solid black; /* حدود سوداء واضحة */
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    }
+    .box:active {
+      transform: scale(0.95);
+    }
+    .box img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .box h2 {
+      margin: 10px 0;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    .box p {
+      margin: 0;
+      font-size: 1em;
+    }
+    .box audio, .box video {
+      width: 100%;
+      margin-top: 10px;
+    }
+    #text-box p {
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+      font-size: 1.1em;
+    }
+    footer {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 1em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>النشرة التفاعلية للتقويم الذاتي المدرسي</h1>
+    <p>برمجة المعلم:<br> <span style="font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">صلاح خليفة الفالح</span><br>
+    مدير المدرسة:<br> <span style="font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">حمد فريح المعيقل</span></p>
+  </header>
+
+  <div class="container">
+    <!-- قسم الفيديو -->
+    <div class="box" style="background-color: #ffe6e6;">
+    <h2>مقطع مرئي تعريفي</h2>
+      <video controls>
+        <source src="video.mp4" type="video/mp4">
+        المتصفح الخاص بك لا يدعم تشغيل الفيديو.
+      </video>
+    </div>
+
+    <!-- قسم النصوص -->
+    <div class="box" style="background-color: #fff8e6;" id="text-box">
+      <h2>التقويم المدرسي</h2>
+      <p>التقويم المدرسي :
+         عملية تشخيصية تتضمن جمع معلومات بطريقة منتظمة ومستمرة حول أداء المدارس، وتحديد جوانب القوة وفرص التحسين في أدائها، وإصدار أحكام حول جهودها التطويرية من حيث فاعليتها، وكفاءتها، وأثرها، واستدامتها، وذلك في ضوء معايير التقويم والتميز المدرسي المعتمدة من الهيئة.</p>
+    </div>
+
+    <!-- قسم الصور -->
+    <div class="box" style="background-color: #ffebcc;">
+      <img src="image2.jpg" alt="صورة 2">
+    </div>
+
+    <div class="box" style="background-color: #f9ccff;">
+      <img src="image3.jpg" alt="صورة 3">
+    </div>
+
+    <div class="box" style="background-color: #ccffff;">
+      <img src="image4.jpg" alt="صورة 4">
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2024 النشرة التفاعلية. جميع الحقوق محفوظة.
+  </footer>
+</body>
+</html>
